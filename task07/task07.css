@@ -1,0 +1,638 @@
+*{
+			margin: 0;
+			padding: 0;
+
+		}
+		.container{
+			width: 100%;
+			min-width: 1280px;
+			font-family: 'Microsoft YaHei';
+
+		}
+		header{
+			width: 100%;
+			height: 60px;
+			font-size: 0;
+		}
+		header .banner-left{
+			height: 60px;
+			width: 10%;
+			display: inline-block;
+			/*
+			display:inline-block就是将元素设置为内联块状元素。(css2.1新增)，<img>、<input>标签就是这种内联块状标签。
+            inline-block 元素特点：
+            1、和其他元素都在一行上；
+            2、元素的高度、宽度、行高以及顶和底边距都可设置。
+            */
+            vertical-align: middle; /*垂直居中*/    
+
+            line-height: 50px;
+            text-align: center;
+
+            position: relative;
+            left: 4.6%;
+
+            background: url(1.png) no-repeat left;
+
+        }
+
+        header .banner-left h1{
+        	color: #4E3A4F;
+        	font-size: 24px;
+        	font-weight: 400;
+        	margin-left: 20px;
+        	margin-top: 10px;
+        	cursor: pointer;/*cursor 属性规定要显示的光标的类型（形状）*/
+        }
+        header nav{
+        	height: 60px;
+        	width: 40%;
+        	display: inline-block;
+        	vertical-align: middle;
+
+        	position: relative;
+        	left: 40%;
+        }
+        header nav ul{
+        	height: 60px;
+        	width: 100%;
+        	line-height: 60px;
+        	list-style: none;
+        	box-sizing: border-box;
+        	margin: 0;
+        	padding: 0;
+        }
+        header nav ul li{
+        	display: inline-block;
+        	width: 20%;
+        	font-size: 14px;
+        	text-align: center;
+        	box-sizing: border-box;
+        	color: #534141;
+        	cursor: pointer;
+
+        	-webkit-transition:color 0.4s ease-in-out;
+        	-moz-transition:color 0.4s ease-in-out;
+        	transition:color 0.4s ease-in-out;
+        }
+
+        header nav ul li:nth-child(1):hover~.move{
+        	left: 0;
+        }
+        header nav ul li:nth-child(2):hover~.move{
+        	left: 20%;
+        }
+        header nav ul li:nth-child(3):hover~.move{
+        	left: 40%;
+        }
+        header nav ul li:nth-child(4):hover~.move{
+        	left: 60%;
+        }
+        header nav ul li:nth-child(5):hover~.move{
+        	left: 80%;}
+        	header nav ul li:hover{
+        		color: #F04C57;
+        	}
+        	header nav ul .move{
+        		position: absolute;
+        		border-top: 4px solid #E53C3C;
+        		left: 0;
+        		top: 55px;
+        	}
+        	header .banner-right{
+        		font-size: 14px;
+        		color: #E53C3C;
+        		height: 60px;
+        		width: 7%;
+        		display: inline-block;
+        		vertical-align: middle;
+        		line-height: 60px;
+        		text-align: center;
+        		cursor: pointer;
+
+        		position: relative;
+        		left: 40%;
+
+        		background: url(2.png) no-repeat left;
+        		background-size: 15px 18px;
+        	}
+
+        	#part1{
+        		background: url(3.png);
+        		width: 100%;
+        		height: 650px;
+        		margin-top: -2px;
+        		background-size: 100% auto;
+        	}
+        	#part1 .inner{
+        		background: grey;
+        	}
+        	#part1 .tex{
+        		position: absolute;
+        		top:300px; 
+        		left:120px;
+        	}
+        	#part1 .tex p{
+        		font-size: 22px;
+        		color: #fff;
+        		margin: 0;
+        	}
+        	#part1 .tex p:first-child{
+        		font-size: 60px;
+        		font-family: "MicrosoftYaHei";
+        		color: rgb(255, 255, 255);
+        		line-height: 0.45;
+        		margin-bottom: 40px;
+
+        	}
+        	#part1 .tex p:last-of-type{
+        		font-size: 21px;
+        		font-family: "MicrosoftYaHei";
+        		color: rgb(255, 253, 253);
+        		line-height: 1.5;
+        		margin-bottom: 60px;
+        	}
+
+        	#part1 .tex span{
+        		width: 330px;
+        		height: 60px;
+        		display: inline-block;
+        		line-height: 60px;
+        		text-align: center;
+        		font-size: 28px;
+        		color: #fff;
+        		background: #E53C3C;
+        		cursor: pointer;
+        	}
+
+        	#part2 {
+        		margin: 40px 0 50px 0;
+        		height: 160px;
+        		overflow: hidden;
+        	}
+        	#part2 ul li {
+        		float: left;
+        		width: 25%;
+        		list-style-type:none;
+        	}
+        	#part2 img {
+        		display: block;
+        		margin: 0 auto 40px;
+        	}
+        	.mes p {
+        		margin: 0 auto;
+        		width: 50%;
+        		height: 55px;
+        		font-size: 14px;
+        		text-align: center;
+        		color: #aba6a5;
+        		border-right: 2px solid #aba6a5;
+        		padding: 0 25%;
+        	}
+        	#part3{
+        		width: 100%;
+        		height: 361px;
+        		background-color: #EDEDED;
+        	}
+        	#part3 img {
+        		display: block;
+        		padding-top: 88px;
+        		margin: 0 auto 50px;
+        	}
+        	#part3 p {
+        		font-size: 53px;
+        		text-align: center;
+        		color: rgba(50, 51, 51, 0.502);
+        	}
+        	#part4 {
+        		height: 341px;
+        		background: url(10.jpg) no-repeat;
+        		background-size: cover;
+
+        	}
+        	#part4 h1 {       		
+        		font-size: 21px;
+        		padding-top: 50px;
+        		text-align: center;
+        		color: #fff;
+        		font-weight: 400;
+        	}
+        	#part4 span{
+        		border:1px solid #fff;
+        		width: 31px;
+        		height: 3px;
+        		text-align: center;
+        	}
+        	#part4  p {
+        		margin-top: 20px;
+        		font-size: 12px;
+        		text-align: center;
+        		color: rgba(255, 255, 255, 0.8);
+        		line-height: 2.605;
+        	}
+        	#part4 .form{
+        		width: 90%;
+        		text-align: center;
+        		margin: 50px auto;
+        	}
+        	#part4 .form select,input{
+        		width: 236px;
+        		height: 36px;
+        		margin-right: 30px;
+        		border-radius: 0;
+
+        	}
+        	#part4 .form select{
+        		border: solid 1px #fff;
+        		-moz-appearance: none;
+        		-webkit-appearance: none;
+        		background: #fff url(11.png) no-repeat scroll right 10px center;
+        		color: #aba6a5;
+        		padding-left: 15px;
+        	}
+        	.sub{
+        		background-color: #bf4f49;
+        		color: #fff;
+        		font-size: 1rem;
+        		letter-spacing: 25px;
+        		text-align: center;
+        		padding-left: 25px;
+        		cursor: pointer;
+        		border:0;
+        	}
+        	#part5{
+        		width: 100%;
+        		height: 631px;
+        		padding-top: 100px;
+        		background-color: #F0F0F0;
+
+        	}
+        	#part5 .photo{       		
+        		margin: 0 auto;
+        		text-align: center;
+        		float: left;
+        		width: 24%;
+        		padding: 0 20px;
+        		box-sizing: border-box;
+        	}
+        	#part5 .photo img{       		
+        		padding: 15px 10px;       		
+        		border:1px solid #e1dedc;
+        		background-color: white;
+        		box-sizing: border-box;
+
+        	}
+        	#part6 {
+        		width: 100%;
+        		height: 550px;
+        	}
+        	.left_new {
+        		background: url(16.png) no-repeat;
+        		background-size: cover;
+        		width: 850px;
+        		height: 550px;
+        		text-align: center;
+        		float: left;
+
+        	}
+        	.photo h3{
+        		font-size: 15px;
+        	}
+
+        	.photo p{
+        		font-size: 10px;
+        		color: #A2A2A2;
+        		margin: 10px 0;
+        	}
+        	
+        	.left_new h3{
+        		font-size: 49.473px;
+        		position: relative;
+        		top: 100px;
+        		color: rgb(255, 255, 255);
+        		line-height: 1.528;
+        		font-weight:400;
+        	}
+
+        	.left_new h2 {
+        		font-size: 157.788px;
+        		position: relative;
+        		top: 40px;
+        		color: rgb(255, 255, 255);
+        		line-height: 1.528;
+        	}
+
+        	.left_new p {
+        		font-size: 22px;
+
+        		color: rgb(255, 255, 255);
+        		line-height: 1.969;
+        	}
+
+        	.right_new {
+        		text-align: center;
+        		padding-top: 150px;
+
+        	}
+
+        	
+        	.right_new p {   
+        		position: relative;
+        		left: 70px;
+        		right: 50px;
+        		top: 20px;
+        		text-align: left;		
+        		font-size: 12px;
+        		font-family: "SimSun";
+        		color: rgb(170, 170, 170);
+        		line-height: 2.5;
+        	}
+        	.right_new a{
+        		position: relative;
+        		top: 50px;
+        		font-size: 12px;
+        		border:2px solid red;
+        		padding: 10px 30px;
+        		text-decoration:none; 
+        		color: rgb(226, 92, 96);
+        		line-height: 2.613;
+        	}
+        	#switch {
+        		text-align: center;
+        		position: relative;
+        		top: 100px;
+        		
+        	}
+
+        	#switch li{
+        		display: inline-block;
+        		width: 8px;
+        		height: 8px;
+        		margin: 0 7px;
+        		border-radius: 50%;
+        		background-color: #fff;
+        		border: 1px solid #929292;
+        		cursor: pointer;
+        	}
+
+        	#switch .active,#switch li:hover{
+        		background-color: #B5B5B5;
+        	}
+
+        	#part7 {
+        		width: 100%;
+        		height: 521px;
+        	}
+
+        	#part7 .left_us{
+        		background-color: rgb(231, 79, 77);
+        		width: 33%;
+        		float: left;
+        		text-align: center;
+        		height: 521px;
+
+        	}
+        	#part7 .middle_us{        		
+        		width: 33%;
+        		float: left;
+        		text-align: center;
+        		height: 521px;
+        	}
+        	
+        	.left_us p{
+        		position: relative;
+        		top: 200px;
+        		font-size: 21px;
+        		font-family: "SimHei";
+        		color: rgb(255, 255, 255);
+        		line-height: 1.446;
+
+        	}
+        	.middle_us p{
+        		position: relative;
+        		top: 200px;
+        		font-size: 21px;
+        		font-family: "SimHei";
+        		color: rgb(50, 51, 51);
+        		line-height: 1.446;
+        	}
+        	.left_us span{
+        		position: relative;
+        		top: 230px;
+        		left: 75px;
+        		border:1px solid white;
+        		width: 31px;               
+        		display: inline-block;
+        	}
+
+        	.middle_us span{
+        		position: relative;
+        		top: 230px;
+        		left: 75px;
+        		border:1px solid #E74F4D;
+        		width: 31px;               
+        		display: inline-block;
+        	}
+        	.left_us a{
+        		width: 150px;
+        		height: 40px;
+        		display: inline-block;
+        		line-height: 40px;
+        		border:1px solid white;
+        		color: white;
+        		position: relative;
+        		top: 300px;
+        		left: -20px;
+        		cursor: pointer;
+        		border-radius: 0;
+        		text-decoration:none; 
+        		font-size: 21px;
+        	}
+        	.middle_us a{
+        		width: 150px;
+        		height: 40px;
+        		display: inline-block;
+        		line-height: 40px;
+        		border:1px solid #E74F4D;
+        		color: #E74F4D;
+        		position: relative;
+        		top: 300px;
+        		left: -20px;
+        		cursor: pointer;
+        		border-radius: 0;
+        		text-decoration:none; 
+        		font-size: 21px;
+        	}
+        	#part8 {
+        		height: 740px;
+        	}
+        	.top {
+        		text-align: center;
+        	}
+        	.top h2{
+        		position: relative;
+        		top: 110px;
+        		font-size: 21px;
+        		font-family: "SimHei";
+        		color: rgb(50, 51, 51);
+        		line-height: 1.446;
+        		font-weight: 500;
+        	}
+        	.top span {
+        		position: relative;
+        		top: 100px;
+        		
+        		border:1px solid #E74F4D;
+        		width: 31px;               
+        		display: inline-block;
+        	}
+        	.top p{
+        		position: relative;
+        		top: 110px;
+        		font-size: 12px;
+
+        		color: rgb(170, 170, 170);
+        		line-height: 1.5;
+        	}
+        	.left{
+        		width: 40%;
+        		float: left;
+        		position: relative;
+        		top: 220px;
+        		left: 140px;
+
+        	}
+        	.left li{
+        		text-decoration:none;
+        	}
+        	.left h3{
+        		font-size: 14px;
+        		font-family: "SimHei";
+        		color: rgba(35, 24, 21, 0.8);
+        		line-height: 1.929;
+        	}
+        	.left p{
+        		font-size: 12px;
+        		font-family: "SimSun";
+        		color: rgba(35, 24, 21, 0.6);
+        		line-height: 1.75;
+        	}
+        	.right{
+        		position: relative;
+        		top: 220px;
+        		width: 60%;
+        		float: right;
+        		
+        	}
+        	.right .form-list{
+        		display: inline;
+        		width: 300px;
+        		float: left;
+        		margin-bottom: 20px;
+
+        	}
+        	.form-list input {
+        		border: 0;
+        		float: left;
+        		height: 40px;
+        		width: 260px;
+        		background-color: #EDEDEF;
+        		padding-left: 15px;
+        	}
+        	.form-list textarea {
+        		width: 560px;
+        		padding-left: 15px;
+        		padding-top: 10px;
+        		border: 0;
+        		height: 100px;
+        		background-color: #EDEDEF;
+        	}
+
+        	#sub-btn1 {
+        		float: left;
+        		width: 560px;
+        		padding-left: 15px;
+        		background-color: #EDEDEF;
+        	}
+        	.btn-reg {
+        		width: 100%;
+        		height: 40px;
+        		border: 0;
+        		font-size: 15px;
+        		background-color: #EDEDEF;
+        		cursor: pointer;
+        	}
+        	#part9 {
+        		width: 100%;
+        		height: 360px;
+        		background-color: rgb(50,53,62);
+        		text-align: center;
+        		display: flex;
+	           flex-direction: column;
+	           align-items: center;
+	           justify-content: center;
+        	}
+        	#part9 h3{
+        		font-size: 21px;
+        		font-family: "SimHei";
+        		color: rgb(255, 255, 255);
+        		line-height: 2.303;
+        	}
+        	#part9 p{
+        		font-size: 12px;
+        		font-family: "SimSun";
+        		color: rgb(255, 255, 255);
+        		line-height: 1.5;
+        	}
+        	.send {
+        		padding: 20px 0;
+        		box-sizing: border-box;
+
+        	}
+        	.send  input,
+        	.send  button{
+        		outline: none;
+        		border: none;
+        		height: 40px;
+        	}
+        	.send  input{
+        		width: 430px;
+        		vertical-align: middle;
+        		text-indent: 1em;
+        	}
+        	.send button{
+        		width: 80px;
+        		background-color: #6F7178;
+        		font-size: 15px;
+        		vertical-align: middle;
+        		color: #fff;
+        		position: relative;
+        		left:-35px; 
+        	}
+        
+        #part9 ul li{
+        	display: inline-block;
+        	margin-right: 20px;
+        	
+        }
+
+        footer .copyright {
+  height: 70px;
+  background-color: #303039;
+  text-align: left;
+}
+footer .copyright span {
+  margin-left: 100px;
+  line-height: 70px;
+  font-size: 13px;
+  color: white;
+
+}
+footer .copyright a {
+  float: right;
+  color: #fff;
+  line-height: 70px;
+  margin-right: 60px;
+  font-size: 12px;
+  text-decoration: none;
+}
