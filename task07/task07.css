@@ -32,7 +32,7 @@
             position: relative;
             left: 4.6%;
 
-            background: url(1.png) no-repeat left;
+            background: url(images/1.png) no-repeat left;
 
         }
 
@@ -113,12 +113,12 @@
         		position: relative;
         		left: 40%;
 
-        		background: url(2.png) no-repeat left;
+        		background: url(images/2.png) no-repeat left;
         		background-size: 15px 18px;
         	}
 
         	#part1{
-        		background: url(3.png);
+        		background: url(images/3.png);
         		width: 100%;
         		height: 650px;
         		margin-top: -2px;
@@ -206,7 +206,7 @@
         	}
         	#part4 {
         		height: 341px;
-        		background: url(10.jpg) no-repeat;
+        		background: url(images/10.jpg) no-repeat;
         		background-size: cover;
 
         	}
@@ -246,7 +246,7 @@
         		border: solid 1px #fff;
         		-moz-appearance: none;
         		-webkit-appearance: none;
-        		background: #fff url(11.png) no-repeat scroll right 10px center;
+        		background: #fff url(images/11.png) no-repeat scroll right 10px center;
         		color: #aba6a5;
         		padding-left: 15px;
         	}
@@ -287,7 +287,7 @@
         		height: 550px;
         	}
         	.left_new {
-        		background: url(16.png) no-repeat;
+        		background: url(images/16.png) no-repeat;
         		background-size: cover;
         		width: 850px;
         		height: 550px;
